@@ -32,6 +32,8 @@ local lifeAttribute = 6
 local speedAttribute = 7
 local intelligenceAttribute = 2
 
+-- Funções
+
 local function getProgressBar(attributeValue) -- Gera uma barra de progresso
     local progressBar = ""
     local progressCount = 0
@@ -51,14 +53,11 @@ local function getProgressBar(attributeValue) -- Gera uma barra de progresso
     return progressBar
 end
 
-local function animalhabit(isNocturnal)
-    local habit = ""
+local function animalhabit(isNocturnal) -- Determina os hábitos da criatura
     if isNocturnal then
-        habit = "Notunos"
-    else
-        habit =  "Diurnos"
+        return "Notunos"
     end
-    return habit
+    return "Diurnos"
 end
 
 -- Card
